@@ -21,8 +21,25 @@ const MovieCard = () => {
     return (
          
         <div>
+            <style>
+                {`
+                  p {
+                    border: 5px solid purple;
+                    display: flex;
+                    justify-content: space-around
+                    height: 200px;
+
+                  }
+
+                `}
+
+
+            </style>
+            <h3>Title</h3>
           <p>{[foundMovie.title]}</p>
+          <h3>Plot</h3>
           <p>{[foundMovie.plot]}</p>
+          <h3>Actors</h3>
           <p> {[foundMovie.actors]}</p>
            
             
