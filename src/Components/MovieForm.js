@@ -34,7 +34,7 @@ const  MovieForm =() => {
             <div>
               <style type="text/css">
                 {`
-
+             
                
               input{
                 display: flex;

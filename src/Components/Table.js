@@ -70,7 +70,20 @@ class Table extends Component {
       //read props passed in from App.js
   
       return (
+
         <table>
+          <style>
+            {`
+            table, th, td {
+              border: 1px solid;
+            }
+
+            tr:hover {
+              background-color: yellow;
+            }
+            `}
+
+          </style>
      <TableHeader/>
      <TableBody/>
      
