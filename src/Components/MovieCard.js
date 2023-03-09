@@ -15,10 +15,16 @@ const MovieCard = () => {
     console.log(foundMovie);
     console.log(foundMovie.title)
 
+    
+
 
     return (
+         
         <div>
-           <p>{foundMovie.title}</p>
+          <p>{[foundMovie.title]}</p>
+          <p>{[foundMovie.plot]}</p>
+          <p> {[foundMovie.actors]}</p>
+           
             
             
         

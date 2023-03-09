@@ -73,6 +73,7 @@ class Table extends Component {
         <table>
      <TableHeader/>
      <TableBody/>
+     
     
         </table>
       )

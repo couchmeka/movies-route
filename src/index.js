@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import MovieListPage from "./Pages/MovieListPage"
-import MoviePage from "./Pages/MoviePage";
 import HomePage from "./Pages/HomePage";
 import MovieCard from "./Components/MovieCard";
 import App from "./App"
@@ -10,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
+import MovieFound from "./Components/Movie";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/movie",
-        element: <MoviePage/>,
+        element: <MovieFound/>,
         children: [
           {
             path:"/movie/:title",
