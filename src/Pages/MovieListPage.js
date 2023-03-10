@@ -1,21 +1,11 @@
-import Table from "../Components/Table"
+import Table from "../Components/Table";
 
 const MovieListPage = () => {
+  return (
+    <div>
+      <Table />
+    </div>
+  );
+};
 
-
-
-
-
-    return (
-        <div>
-          <Table/>
-          </div>
-    
-      )
-
-
-}
-
-
-
-export default MovieListPage
+export default MovieListPage;

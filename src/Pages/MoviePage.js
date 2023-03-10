@@ -1,25 +1,11 @@
-import { Outlet } from "react-router-dom"
-
-
+import { Outlet } from "react-router-dom";
 
 const MoviePage = () => {
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
+};
 
-
-
-    return (
-
-        <div>
-            
-
-            <Outlet/>
-        </div>
-        
-    )
-
-
-
-
-}
-
-
-export default MoviePage
+export default MoviePage;

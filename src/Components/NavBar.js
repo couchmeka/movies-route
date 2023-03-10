@@ -1,15 +1,10 @@
-
-import { Link } from 'react-router-dom';
-
-
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-
-    return (
-        
-        <div className='nav-layout'>
-            <style>
-               {`
+  return (
+    <div className="nav-layout">
+      <style>
+        {`
                .nav-layout{
                background-color: grey;
                height: 100px;
@@ -22,13 +17,13 @@ const NavBar = () => {
                
                }
                `}
-            </style>
-            
-            <Link to="/"> Home</Link>
-            <Link to="/movielist"> List</Link>
-            <Link to="/movie"> Movie</Link>
-        </div>
-    )
-}
+      </style>
+
+      <Link to="/"> Home</Link>
+      <Link to="/movielist"> List</Link>
+      <Link to="/movie"> Movie</Link>
+    </div>
+  );
+};
 
 export default NavBar;

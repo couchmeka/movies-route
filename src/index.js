@@ -1,13 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import MovieListPage from "./Pages/MovieListPage"
+import MovieListPage from "./Pages/MovieListPage";
 import HomePage from "./Pages/HomePage";
 import MovieCard from "./Components/MovieCard";
-import App from "./App"
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import MovieFound from "./Components/Movie";
 
@@ -15,27 +12,26 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children:[
+    children: [
       {
-        index:true,
-        element: <HomePage/>
+        index: true,
+        element: <HomePage />,
       },
       {
         path: "/movielist",
-        element: <MovieListPage/>
+        element: <MovieListPage />,
       },
       {
         path: "/movie",
-        element: <MovieFound/>,
+        element: <MovieFound />,
         children: [
           {
-            path:"/movie/:title",
-            element: <MovieCard />
-          }
-        ]
-      }
-    ]
-
+            path: "/movie/:title",
+            element: <MovieCard />,
+          },
+        ],
+      },
+    ],
   },
 ]);
 
