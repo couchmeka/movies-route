@@ -1,4 +1,7 @@
 import { useOutletContext, useParams } from "react-router-dom";
+import { Card } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const MovieCard = () => {
@@ -15,7 +18,7 @@ const MovieCard = () => {
     console.log(foundMovie);
     console.log(foundMovie.title)
 
-    
+    const logo = require('./pexels-cottonbro-studio-3945321.jpg');
 
 
     return (
@@ -23,26 +26,30 @@ const MovieCard = () => {
         <div>
             <style>
                 {`
-                  p {
-                    border: 5px solid purple;
-                    display: flex;
-                    justify-content: space-around
-                    height: 200px;
+                Card {
 
-                  }
+                }
 
                 `}
 
 
             </style>
-            <h3>Title</h3>
-          <p>{[foundMovie.title]}</p>
-          <h3>Plot</h3>
-          <p>{[foundMovie.plot]}</p>
-          <h3>Actors</h3>
-          <p> {[foundMovie.actors]}</p>
            
-            
+    <Card style={{ width: '35rem' }}>
+    <Card.Img variant="top" src={logo} />
+      <Card.Body>
+        <Card.Title>{[foundMovie.title]}</Card.Title>
+        <Card.Text> Plot: 
+        {[foundMovie.plot]}
+        </Card.Text>
+      </Card.Body>
+      <Card.Footer>Actors: {[foundMovie.actors.map((actor)=>{
+
+        return (<p>{actor}</p>
+
+        )
+      })]}</Card.Footer>
+    </Card>
             
         
         </div>

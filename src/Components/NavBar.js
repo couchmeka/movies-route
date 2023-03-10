@@ -11,7 +11,7 @@ const NavBar = () => {
             <style>
                {`
                .nav-layout{
-               background-color: powderblue;
+               background-color: grey;
                height: 100px;
                font-size: 40px;
                display: flex;
