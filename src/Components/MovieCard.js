@@ -1,6 +1,6 @@
 import { useOutletContext, useParams } from "react-router-dom";
 import { Card } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const MovieCard = () => {
   //access router context and params passed
@@ -15,7 +15,6 @@ const MovieCard = () => {
   console.log(foundMovie);
   console.log(foundMovie.title);
 
-  const logo = require("./pexels-cottonbro-studio-3945321.jpg");
 
   return (
     <div>
@@ -29,7 +28,6 @@ const MovieCard = () => {
       </style>
 
       <Card style={{ width: "35rem" }}>
-        <Card.Img variant="top" src={logo} />
         <Card.Body>
           <Card.Title>{[foundMovie.title]}</Card.Title>
           <Card.Text>
